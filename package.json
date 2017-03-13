@@ -1,0 +1,27 @@
+{
+  "name": "scrutin-eyes",
+  "version": "1.0.0",
+  "description": "Trying to experiment with testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srsheldon/scrutin-eyes.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Samuel R. Sheldon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srsheldon/scrutin-eyes/issues"
+  },
+  "homepage": "https://github.com/srsheldon/scrutin-eyes#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.2.0"
+  }
+}
