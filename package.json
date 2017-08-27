@@ -19,9 +19,15 @@
     "url": "https://github.com/srsheldon/scrutin-eyes/issues"
   },
   "homepage": "https://github.com/srsheldon/scrutin-eyes#readme",
+  "babel": {
+    "presets": ["env"]
+  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.2.0"
+  },
+  "dependencies": {
+    "vnu-jar": "^17.7.0"
   }
 }
