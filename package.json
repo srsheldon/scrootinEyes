@@ -1,24 +1,40 @@
 {
-  "name": "scrutin-eyes",
+  "name": "scrutinEyes",
   "version": "1.0.0",
   "description": "Trying to experiment with testing",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/srsheldon/scrutin-eyes.git"
-  },
   "keywords": [
     "testing"
   ],
-  "author": "Samuel R. Sheldon",
-  "license": "MIT",
+  "homepage": "https://github.com/srsheldon/scrutinEyes#readme",
   "bugs": {
-    "url": "https://github.com/srsheldon/scrutin-eyes/issues"
+    "url": "https://github.com/srsheldon/scrutinEyes/issues",
+    "email": ""
   },
-  "homepage": "https://github.com/srsheldon/scrutin-eyes#readme",
+  "license": "MIT",
+  "author": "Samuel R. Sheldon",
+  "main": "index.js",
+  "bin": "",
+  "man": [
+    
+  ],
+  "directories": {
+    "bin": "./bin",
+    "doc": "./doc",
+    "example": "./example",
+    "lib": "./lib",
+    "man": "./man",
+    "test": "./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srsheldon/scrutinEyes.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config" : { 
+    "port" : "8080" 
+  },
   "babel": {
     "presets": ["env"]
   },
