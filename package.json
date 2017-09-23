@@ -1,19 +1,21 @@
 {
-  "name": "scrutinEyes",
+  "name": "scrootinEyes",
   "version": "1.0.0",
-  "description": "Trying to experiment with testing",
+  "description": "An automated test writer for generating automated tests by passing in files with known patterns",
   "keywords": [
     "testing"
   ],
-  "homepage": "https://github.com/srsheldon/scrutinEyes#readme",
+  "homepage": "https://github.com/srsheldon/scrootinEyes#readme",
   "bugs": {
-    "url": "https://github.com/srsheldon/scrutinEyes/issues",
+    "url": "https://github.com/srsheldon/scrootinEyes/issues",
     "email": ""
   },
   "license": "MIT",
   "author": "Samuel R. Sheldon",
-  "main": "index.js",
-  "bin": "",
+  "main": "./lib/scrootinEyes.js",
+  "bin": {
+    "scrootinEyesCli": "./lib/scrootinEyes.js"
+  },
   "man": [
     
   ],
@@ -27,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srsheldon/scrutinEyes.git"
+    "url": "git+https://github.com/srsheldon/scrootinEyes.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
