@@ -16,9 +16,7 @@
   "bin": {
     "scrootinEyesCli": "./lib/scrootinEyes.js"
   },
-  "man": [
-    
-  ],
+  "man": [],
   "directories": {
     "bin": "./bin",
     "doc": "./doc",
@@ -32,18 +30,22 @@
     "url": "git+https://github.com/srsheldon/scrootinEyes.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel-node ./lib/logger/seLogger.js"
   },
-  "config" : { 
-    "port" : "8080" 
+  "config": {
+    "port": "8080"
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.2.0"
+    "babel-preset-env": "^1.2.0",
+    "eslint": "^4.7.2"
   },
   "dependencies": {
     "vnu-jar": "^17.7.0"
