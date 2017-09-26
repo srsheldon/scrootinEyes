@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 'use strict';
+const RIGHT_POINTING_MAGNIFYING_GLASS_EMOJI = "\uD83D\uDD0E";
 //String literal of the scrootinEyes logo for welcoming the user 🤗
-const welcomeBanner = '\
+const SCROOTINEYES_LOGO_STRING_LITERAL = '\
                            _   _       ______                     \n \
                          | | (_)     |  ____|                     \n \
  ___  ___ _ __ ___   ___ | |_ _ _ __ | |__  _   _  ___  ___       \n \
@@ -12,4 +13,4 @@ const welcomeBanner = '\
            //                              |___/                  \n\n';
 
 
- console.log(welcomeBanner);
+ console.log(SCROOTINEYES_LOGO_STRING_LITERAL);
