@@ -1,0 +1,47 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+
+# top-most EditorConfig file
+root = true
+#=======================================================================================================================
+# Global Config
+#=======================================================================================================================
+[*]
+indent_style = space # Space indentation
+indent_size = 4
+end_of_line = lf # Unix-style newlines
+insert_final_newline = true # Newline ending every file
+trim_trailing_whitespace = true # Denotes whether whitespace is allowed at the end of lines
+max_line_length = 120 # Forces hard line wrapping after the amount of characters specified.
+#=======================================================================================================================
+#
+#=======================================================================================================================
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,py}]
+charset = utf-8
+#=======================================================================================================================
+#
+#=======================================================================================================================
+# 4 space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Tab indentation (no size specified)
+[Makefile]
+#indent_style = tab
+#=======================================================================================================================
+# JavaScript Files
+#=======================================================================================================================
+# Indentation override for all JS under lib directory
+[*.js]
+indent_style = space
+indent_size = 2
+#=======================================================================================================================
+#
+#=======================================================================================================================
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
