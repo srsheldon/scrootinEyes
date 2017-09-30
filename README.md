@@ -15,7 +15,7 @@
 ## Installation
 
 ```console
-$ npm install 
+$ npm install
 ```
 
 ## Configuration
@@ -23,3 +23,21 @@ $ npm install
 ## Usage
 
 ## Package Manifest
+
+### Production Dependencies
+
+| Dependency       | Use                                                          |
+| :---             | :---                                                         |
+| babel-polyfill   | Polyfill for Babel features that cannot be transpiled        |
+| vnu-jar          | HTML Validation through local web server                     |
+
+
+### Development Dependencies
+
+| Dependency       | Use                                                          |
+| :---             | :---                                                         |
+| babel-cli        | Babel Command line interface                                 |
+| babel-preset-env |                                                              |
+| eslint           | JavaScript Code linter                                       |
+| webpack          | Bundler with plugin system and integrated development server |
+| webpack-merge    | Library for merging webpack config objects                   |
