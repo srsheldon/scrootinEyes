@@ -1,4 +1,4 @@
-# [![scrootinEyes](images/scrootinEyes_logo.svg)](https://github.com/srsheldon/scrootinEyes "A second pair of Eyes for the coding perfectionist")
+# [![scrootinEyes](doc/images/scrootinEyes_logo.svg)](https://github.com/srsheldon/scrootinEyes "A second pair of Eyes for the coding perfectionist")
 
 
 
@@ -14,7 +14,7 @@
 
 ## Installation
 
-```console
+```shell
 $ npm install
 ```
 
@@ -26,18 +26,22 @@ $ npm install
 
 ### Production Dependencies
 
-| Dependency       | Use                                                          |
-| :---             | :---                                                         |
-| babel-polyfill   | Polyfill for Babel features that cannot be transpiled        |
-| vnu-jar          | HTML Validation through local web server                     |
+| Dependency                                                                   | Use                                                          |
+| :---                                                                         | :---                                                         |
+| babel-polyfill                                                               | Polyfill for Babel features that cannot be transpiled        |
+| [babel-runtime](https://babeljs.io/docs/plugins/transform-runtime/)          |                                                              |
+| vnu-jar                                                                      | HTML Validation through local web server                     |
+
 
 
 ### Development Dependencies
 
-| Dependency       | Use                                                          |
-| :---             | :---                                                         |
-| babel-cli        | Babel Command line interface                                 |
-| babel-preset-env |                                                              |
-| eslint           | JavaScript Code linter                                       |
-| webpack          | Bundler with plugin system and integrated development server |
-| webpack-merge    | Library for merging webpack config objects                   |
+| Dependency                                                         | Use                                                          |
+| :---                                                               | :---                                                         |
+| [babel-cli](http://babeljs.io/docs/usage/cli/)                     | Babel Command line interface                                 |
+| [babel-preset-env](https://babeljs.io/docs/plugins/preset-env/)                        | Babel preset that automatically determines the Babel plugins you need. |
+| [babel-plugin-transform-regenerator](https://babeljs.io/docs/plugins/transform-regenerator/) |                                                 |
+| [babel-plugin-transform-runtime](https://babeljs.io/docs/plugins/transform-runtime/)   |                             |
+| [eslint](https://eslint.org/)                                      | JavaScript Code linter                                       |
+| [webpack](https://webpack.js.org/)                                 | Bundler with plugin system and integrated development server |
+| [webpack-merge](https://github.com/survivejs/webpack-merge)        | Library for merging webpack config objects                   |
