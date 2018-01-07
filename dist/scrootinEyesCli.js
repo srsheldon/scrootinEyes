@@ -1,19 +1,22 @@
 #!/usr/bin/env node
-'use strict';
-require("babel-register");
-require('babel-polyfill');
-import fs from 'fs';
-import eventEmitter from 'events';
-import util from 'util';
 
-/*const FS = require('fs'),
-EVENT_EMITTER = require('events'),
-UTIL = require('util'),
-DEBUGLOG = UTIL.debuglog('scrootinEyesCli'),*/
-const DEBUGLOG = util.debuglog('scrootinEyesCli'),
-RIGHT_POINTING_MAGNIFYING_GLASS_EMOJI = "\uD83D\uDD0E",
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+require('babel-polyfill');
+
+var _fs = require('fs');
+
+var _fs2 = _interopRequireDefault(_fs);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var RIGHT_POINTING_MAGNIFYING_GLASS_EMOJI = '\uD83D\uDD0E';
 //String literal of the scrootinEyes logo for welcoming the user 🤗
-SCROOTINEYES_LOGO_STRING_LITERAL = '\
+var SCROOTINEYES_LOGO_STRING_LITERAL = '\
                            _   _       ______                     \n \
                          | | (_)     |  ____|                     \n \
  ___  ___ _ __ ___   ___ | |_ _ _ __ | |__  _   _  ___  ___       \n \
@@ -23,50 +26,26 @@ SCROOTINEYES_LOGO_STRING_LITERAL = '\
             //                              __/ /                 \n \
            //                              |___/                  \n\n';
 
-
- console.log(SCROOTINEYES_LOGO_STRING_LITERAL);
+console.log(SCROOTINEYES_LOGO_STRING_LITERAL);
 //currently running file using:$ ./node_modules/.bin/babel-node ./bin/scrootinEyesCli.js ./lib
-
-class ScrootinEyesCliEmitter extends EVENT_EMITTER {}
-
-const myEmitter = new ScrootinEyesCliEmitter();
-myEmitter.on('help', () => {
-    DEBUGLOG('a help event occurred!');
-});
-
-
-
-
-const HELP_FUNCTION = () => {
-    DEBUGLOG("help me out bro!");
-};
-
-process.argv.forEach((val, index) => {
-    //console.log(`${index}: ${val}`);
+process.argv.forEach(function (val, index) {
+    console.log(index + ': ' + val);
     if (val === '--help' || val === '-h') {
         console.log('help is on the way!');
-    }
-
-    switch(val) {
-        case '--help':
-            return myEmitter.emit('help');
-        case '--version':
-            return console.log('1.0.0');
-        default:
     }
 });
 
 //slice the first two items in the argv array becasuse the first item in the array is the process.execPath
 //(path from where node is executed). The second element will be the path to the JavaScript file being executed.
 //The remaining elements will be any additional command line arguments.
- var argv = process.argv.slice(2);
- var help = "usage: scrootinEyesCli [options] \n\n" + "Searches files for TODO, FIXME or OPTIMISE tags within your project,\n" + "displaying the line number and file name along with the tag description\n"+ "options:\n" + "[directory_name] # Optional parameter, will run from current directory\n" + "-h, [--help] # Show this help message and quit";
- var tasks = {};
- tasks.help = function(){
-     console.log(help);
+var argv = process.argv.slice(2);
+var help = "usage: scrootinEyesCli [options] \n\n" + "Searches files for TODO, FIXME or OPTIMISE tags within your project,\n" + "displaying the line number and file name along with the tag description\n" + "options:\n" + "[directory_name] # Optional parameter, will run from current directory\n" + "-h, [--help] # Show this help message and quit";
+var tasks = {};
+tasks.help = function () {
+    console.log(help);
 };
 var new_array = process.argv.map(function callback(currentValue, index, array) {
-    DEBUGLOG(`current value: ${currentValue} and index: ${index} and array: ${array}`)
+    console.log('current value: ' + currentValue + ' and index: ' + index + ' and array: ' + array);
     // Return element for new_array
 });
 
@@ -122,7 +101,7 @@ tasks.search = function (dir, action) {
 */
 
 // If no arguments are passed, pass the current directory
-if(typeof argv[0] === "undefined" || argv[0] === null) {
+if (typeof argv[0] === "undefined" || argv[0] === null) {
     argv[0] = ".";
 }
 
@@ -140,3 +119,11 @@ if(typeof argv[0] === "undefined" || argv[0] === null) {
 //     //tasks.help();
 //     console.log('help requested!');
 // }
+
+exports.default = {
+    //tasks,
+    newFunctionTest: function newFunctionTest() {
+        console.log('returning 7 for test');
+        return 7;
+    }
+};

@@ -14,7 +14,7 @@
   "author": "Samuel R. Sheldon",
   "main": "./lib/scrootinEyes.js",
   "bin": {
-    "scrootinEyesCli": "./lib/scrootinEyes.js"
+    "scrootinEyesCli": "./bin/scrootinEyesCli.js"
   },
   "man": [],
   "directories": {
@@ -30,27 +30,31 @@
     "url": "git+https://github.com/srsheldon/scrootinEyes.git"
   },
   "scripts": {
+    "build": "babel --no-babelrc bin -d dist --presets env",
     "start": "webpack --config ./webpack.config.babel.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "babel-node ./lib/logger/seLogger.js"
+    "test": "babel-node ./bin/scrootinEyesCli.test.js",
+    "dev": "babel-node ./lib/logger/seLogger.js",
+    "debug": "NODE_DEBUG=scrootinEyesCli node ./bin/scrootinEyesCli.js"
   },
   "config": {
     "port": "8080"
   },
   "babel": {
+    "babelrc": false,
     "presets": [
       "env"
-    ]
+    ],
+    "comments": false
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.2.0",
-    "eslint": "^4.7.2",
-    "webpack": "^3.6.0",
-    "webpack-merge": "^4.1.0"
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.13.1",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1"
   },
   "dependencies": {
-    "vnu-jar": "^17.7.0"
+    "babel-polyfill": "^6.26.0",
+    "vnu-jar": "^17.12.15"
   }
 }
