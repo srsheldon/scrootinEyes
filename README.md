@@ -1,4 +1,15 @@
-# [![scrootinEyes](doc/images/scrootinEyes_logo.svg)](https://github.com/srsheldon/scrootinEyes "A second pair of Eyes for the coding perfectionist")
+<header>
+    <h1 align="center">
+        <a href="https://github.com/srsheldon/scrootinEyes">
+            <img src="doc/images/scrootinEyes_logo.svg" alt="ScrootinEyes"/>
+        </a>
+    </h1>
+    <h2></h2>
+    <figure>
+        <img src="https://travis-ci.org/srsheldon/scrootinEyes.svg?branch=master" alt="Travis CI build status">
+    </figure>
+    <br/>
+</header>
 
 
 
