@@ -11,7 +11,11 @@
     "email": ""
   },
   "license": "MIT",
-  "author": "Samuel R. Sheldon",
+  "author": {
+    "name": "Samuel R. Sheldon",
+    "email": "samuelrsheldon@gmail.com",
+    "url": "http://srsheldon.com/"
+  },
   "main": "./lib/scrootinEyes.js",
   "bin": {
     "scrootinEyesCli": "./bin/scrootinEyesCli.js"
@@ -32,7 +36,7 @@
   "scripts": {
     "build": "babel --no-babelrc bin -d dist --presets env",
     "start": "webpack --config ./webpack.config.babel.js",
-    "test": "babel-node ./bin/scrootinEyesCli.test.js",
+    "test": "babel-node ./test/scrootinEyesCli.test.js",
     "dev": "babel-node ./lib/logger/seLogger.js",
     "debug": "NODE_DEBUG=scrootinEyesCli node ./bin/scrootinEyesCli.js"
   },
@@ -50,6 +54,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.13.1",
+    "mocha": "^4.1.0",
+    "sinon": "^4.1.4",
     "webpack": "^3.10.0",
     "webpack-merge": "^4.1.1"
   },
