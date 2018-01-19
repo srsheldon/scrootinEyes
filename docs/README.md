@@ -1,10 +1,9 @@
 <header>
     <h1 align="center">
         <a href="https://github.com/srsheldon/scrootinEyes">
-            <img src="doc/images/scrootinEyes_logo.svg" alt="ScrootinEyes"/>
+            <img src="images/scrootinEyes_logo.svg" alt="ScrootinEyes"/>
         </a>
     </h1>
-    <h2></h2>
     <figure>
         <img src="https://travis-ci.org/srsheldon/scrootinEyes.svg?branch=master" alt="Travis CI build status">
     </figure>
@@ -14,11 +13,11 @@
 
 
 ## Table of Contents
-1. [Purpose](#Purpose)
-2. [Installation](#Installation)
-3. [Configuration](#Configuration)
-4. [Usage](#Usage)
-5. [Package Manifest](#Package-Manifest)
+1. [Purpose](#purpose)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Usage](#usage)
+5. [Package Manifest](#package-manifest)
 
 
 ## Purpose
