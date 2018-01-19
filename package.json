@@ -23,7 +23,7 @@
   "man": [],
   "directories": {
     "bin": "./bin",
-    "doc": "./docs",
+    "doc": "./doc",
     "example": "./example",
     "lib": "./lib",
     "man": "./man",
