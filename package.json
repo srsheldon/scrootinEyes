@@ -35,6 +35,10 @@
   },
   "scripts": {
     "build": "babel --no-babelrc bin -d dist --presets env",
+    "build:gatsby": "gatsby build",
+    "deploy:gatsby": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop:gatsby": "gatsby develop",
+    "format:gatsby": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "start": "webpack --config ./webpack.config.babel.js",
     "test": "babel-node ./test/scrootinEyesCli.test.js",
     "dev": "babel-node ./lib/logger/seLogger.js",
@@ -52,12 +56,22 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "chunk-manifest-webpack-plugin": "^1.1.2",
     "eslint": "^4.13.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "gatsby": "^1.9.164",
     "gatsby-cli": "^1.1.28",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gh-pages": "^1.1.0",
     "mocha": "^4.1.0",
+    "prettier": "^1.10.2",
+    "react-helmet": "^5.2.0",
     "sinon": "^4.1.4",
     "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
