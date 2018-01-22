@@ -4,9 +4,13 @@
             <img src="doc/images/scrootinEyes_logo.svg" alt="ScrootinEyes"/>
         </a>
     </h1>
-    <figure>
-        <img src="https://travis-ci.org/srsheldon/scrootinEyes.svg?branch=master" alt="Travis CI build status">
-    </figure>
+    <a href="LICENSE">
+        <img src="doc/images/license_badge.svg" alt="MIT license">
+    </a>
+    <a href="CODE_OF_CONDUCT.md">
+        <img src="doc/images/code_of_conduct_badge.svg" alt="Code of Conduct">
+    </a>
+    <img src="https://travis-ci.org/srsheldon/scrootinEyes.svg?branch=master" alt="Travis CI build status">
     <br/>
 </header>
 
