@@ -41,6 +41,8 @@
     "format:gatsby": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "start": "webpack --config ./webpack.config.babel.js",
     "test": "babel-node ./test/scrootinEyesCli.test.js",
+    "test:security": "nsp check",
+    "test:jsCodeQuality": "eslint --ext .js lib/",
     "dev": "babel-node ./lib/logger/seLogger.js",
     "debug": "NODE_DEBUG=scrootinEyesCli node ./bin/scrootinEyesCli.js"
   },
@@ -54,12 +56,26 @@
     ],
     "comments": false
   },
+  "eslintConfig": {
+    "plugins": [
+      "security"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:security/recommended"
+    ]
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "chunk-manifest-webpack-plugin": "^1.1.2",
     "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-security": "^1.4.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "gatsby": "^1.9.164",
     "gatsby-cli": "^1.1.28",
@@ -67,6 +83,7 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gh-pages": "^1.1.0",
     "mocha": "^4.1.0",
+    "nsp": "^3.1.0",
     "prettier": "^1.10.2",
     "react-helmet": "^5.2.0",
     "sinon": "^4.1.4",
