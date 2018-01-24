@@ -1,7 +1,7 @@
 <header>
     <h1 align="center">
         <a href="https://github.com/srsheldon/scrootinEyes">
-            <img src="doc/images/scrootinEyes_logo.svg" alt="ScrootinEyes"/>
+            <img src="doc/images/scrootinEyes_logo.svg" alt="scrootinEyes"/>
         </a>
     </h1>
     <a href="LICENSE">
@@ -10,10 +10,12 @@
     <a href="CODE_OF_CONDUCT.md">
         <img src="doc/images/code_of_conduct_badge.svg" alt="Code of Conduct">
     </a>
-    <img src="https://travis-ci.org/srsheldon/scrootinEyes.svg?branch=master" alt="Travis CI build status">
     <br/>
 </header>
 
+## Project Status Badges
+[![NSP Status](https://nodesecurity.io/orgs/srsheldon/projects/8c9a8ad9-00b8-4ed2-b311-50e5dd690c6b/badge)](https://nodesecurity.io/orgs/srsheldon/projects/8c9a8ad9-00b8-4ed2-b311-50e5dd690c6b)
+[![Build Status](https://travis-ci.org/srsheldon/scrootinEyes.svg?branch=master)](https://travis-ci.org/srsheldon/scrootinEyes)
 
 
 ## Table of Contents
