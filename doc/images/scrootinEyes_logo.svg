@@ -1,17 +1,17 @@
-<svg width="700" height="150" xmlns="http://www.w3.org/2000/svg">
+<svg width="119.99999999999999" height="75" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="152" width="702" y="-1" x="-1"/>
+  <rect fill="none" id="canvas_background" height="77" width="122" y="-1" x="-1"/>
   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <text transform="matrix(4.16882, 0, 0, 4.14729, -963.86, -331.074)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="29" id="svg_1" y="103.115729" x="232.17027" stroke-width="0" stroke="#000" fill="#000000">scrootinEyes</text>
-  <line transform="rotate(-6.4682, 169.644, 101.126)" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="115.447922" x2="152.822681" y1="86.804732" x1="186.465483" stroke-width="10.5" stroke="#000" fill="none"/>
-  <polyline stroke-linecap="round" id="svg_5" points="205.01658725738525,66.68160009384155 205.01658725738525,66.68160009384155 " fill-opacity="null" stroke-opacity="null" stroke-width="10.5" stroke="#000" fill="none"/>
-  <polyline stroke-linecap="round" id="svg_6" points="274.34197473526,66.01501750946045 274.34197473526,66.01501750946045 " fill-opacity="null" stroke-opacity="null" stroke-width="10.5" stroke="#000" fill="none"/>
+  <text font-weight="normal" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="101" id="svg_1" y="55.17222" x="10.83967" stroke-width="0" stroke="#000" fill="#000000">oo</text>
+  <line stroke-width="8" stroke-linecap="null" stroke-linejoin="null" id="svg_2" y2="71.838891" x2="3.333338" y1="50.505554" x1="22.666672" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="none"/>
+  <ellipse ry="4.5" rx="4.833334" id="svg_4" cy="32.338886" cx="45.500008" stroke-width="8" fill="#000"/>
+  <ellipse ry="4.5" rx="4.833334" id="svg_6" cy="32.005556" cx="101.833341" stroke-width="8" fill="#000"/>
  </g>
 </svg>
