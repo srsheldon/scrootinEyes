@@ -1,7 +1,7 @@
 <header>
     <h1 align="center">
         <a href="https://github.com/srsheldon/scrootinEyes">
-            <img src="doc/images/scrootinEyes_logo.svg" alt="scrootinEyes"/>
+            <img src="doc/images/scrootinEyes_banner_logo.svg" alt="scrootinEyes"/>
         </a>
     </h1>
     <a href="LICENSE">

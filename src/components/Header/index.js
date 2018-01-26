@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import scrootinEyesLogo from '../../images/scrootinEyes_logo.svg'
+import React from 'react';
+import Link from 'gatsby-link';
+import scrootinEyesLogo from '../../../doc/images/scrootinEyes_banner_logo.svg';
 
 const Header = () => (
     <div>
