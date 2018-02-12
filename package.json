@@ -44,7 +44,8 @@
     "test:security": "nsp check",
     "test:jsCodeQuality": "eslint --ext .js lib/",
     "dev": "babel-node ./lib/logger/seLogger.js",
-    "debug": "NODE_DEBUG=scrootinEyesCli node ./bin/scrootinEyesCli.js"
+    "debug": "NODE_DEBUG=scrootinEyesCli babel-node ./bin/scrootinEyesCli.js",
+    "jsdoc": "jsdoc -c doc/JSDocConfiguration.json"
   },
   "config": {
     "port": "8080"
@@ -82,6 +83,7 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gh-pages": "^1.1.0",
+    "jsdoc": "^3.5.5",
     "mocha": "^4.1.0",
     "nsp": "^3.1.0",
     "prettier": "^1.10.2",
